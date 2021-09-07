@@ -131,7 +131,7 @@ Al finalizar vamos a tener archivos .cap que se pueden interpretar con wireshark
 
 ## Analizar con wireshark 
 
-Como dijimos anteriormente, podemos analizar los archivos generados con por las herramientas anteriores con wiresark y ver todo el intercambio que ocurre entre el cliente y el AP. Si escribimos en el filtro de la captura `eapol`, veremos los frames que se usan para el [protocolo de autenticarción](https://support.huawei.com/enterprise/en/doc/EDOC1100086527) de dicho nombre en 802.1X, cuando manda una solicitud de autenticación. En wireshark incluso nos marca cuando empieza y cuando termina este handshake.
+Como dijimos anteriormente, podemos analizar los archivos generados con por las herramientas anteriores con wiresark y ver todo el intercambio que ocurre entre el cliente y el AP. Si escribimos en el filtro de la captura `eapol`, veremos los frames que se usan para el [protocolo de autenticación](https://support.huawei.com/enterprise/en/doc/EDOC1100086527) de dicho nombre en 802.1X, cuando manda una solicitud de autenticación. En wireshark incluso nos marca cuando empieza y cuando termina este handshake.
 
 ![wireshark_1](https://github.com/facundoalarcon/computernetworks/blob/main/wireless/pictures/wireshark_1.png)
 
@@ -163,6 +163,7 @@ Entre algunas recomendaciones, podemos destacar: utilizar métodos de autenticac
 Otra cosa que se puede hacer es filtrar dispositivos por dirección MAC, esto para permitir únicamente a dispositivos conocidos se autentiquen a nuestro AP. Así también, se podría limitar los intentos de autenticación de los clientes. Normalmente son features que se pueden configurar en el AP.
 
 ## Más información
+- [O'REILLY](https://www.oreilly.com/library/view/80211-wireless-networks/0596100523/ch04.html) - información detallada sobre Wireless Frames.
 - [meraki](https://documentation.meraki.com/General_Administration/Tools_and_Troubleshooting/Analyzing_Wireless_Packet_Captures) - análisis de paquetes wireless.
 - [cisco community](https://community.cisco.com/t5/wireless-mobility-documents/802-11-frames-a-starter-guide-to-learn-wireless-sniffer-traces/ta-p/3110019) - wireless sniffer traces.
 - [juniper-mistIa](https://www.mist.com/documentation/what-is-the-difference-between-ap-deauthentication-and-client-deauthentication/) diferencias entre tramas de deauth y disassociation.
