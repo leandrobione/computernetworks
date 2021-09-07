@@ -129,7 +129,7 @@ En este caso vigilar la terminal con airodump hasta que se obtenga dicho mensaje
 
 Al finalizar vamos a tener archivos .cap que se pueden interpretar con wireshark.
 
-## Analizar con wireshark 
+## Analizar con Wireshark 
 
 Como dijimos anteriormente, podemos analizar los archivos generados con por las herramientas anteriores con wiresark y ver todo el intercambio que ocurre entre el cliente y el AP. Si escribimos en el filtro de la captura `eapol`, veremos los frames que se usan para el [protocolo de autenticación](https://support.huawei.com/enterprise/en/doc/EDOC1100086527) de dicho nombre en 802.1X, cuando manda una solicitud de autenticación. En wireshark incluso nos marca cuando empieza y cuando termina este handshake.
 
