@@ -117,7 +117,7 @@ Si hacemos una prueba de ping desde el cliente del AP podremos ver perdida de pa
 
 A su vez, si observamos el estado de la conexión veremos que el cliente no se está podrá conectar a la red.
 
-Para finalizar el ataque debemos ver EAPOL en las notas de airodump-ng.
+Para finalizar el ataque debemos ver EAPOL en las notas de airodump-ng, cuando aireplay-ng termine de enviar las tramas de deauth.
 
 ![airodump-ng__4](https://github.com/facundoalarcon/computernetworks/blob/main/wireless/pictures/airodump-ng_4.png)
 
