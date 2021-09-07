@@ -117,7 +117,7 @@ Si hacemos una prueba de ping desde el cliente del AP podremos ver perdida de pa
 
 A su vez, si observamos el estado de la conexión veremos que el cliente no se está podrá conectar a la red.
 
-Para finalizar el ataque debemos ver EAPOL en las notas de airodump-ng, cuando aireplay-ng termine de enviar las tramas de deauth.
+Para finalizar el ataque debemos ver EAPOL en las notas de airodump-ng, cuando aireplay-ng termine de enviar las tramas de deauth. A veces no aparece instantaneamente y debemos dejar corriendo airodump unos momentos más.
 
 ![airodump-ng__4](https://github.com/facundoalarcon/computernetworks/blob/main/wireless/pictures/airodump-ng_4.png)
 
@@ -173,5 +173,5 @@ Otra cosa que se puede hacer es filtrar dispositivos por dirección MAC, esto pa
 - [aircrack-lab](https://www.aircrack-ng.org/doku.php?id=cracking_wpa)
 - [fluxion](https://github.com/FluxionNetwork/fluxion) - crear un "evil-twin", ataques WPA MITM.
 - [macchanger](https://www.kali.org/tools/macchanger/) - tool que permite cambiar la dirección MAC a tu adaptador.
-- [eapol](https://juncotic.com/wpa2-como-funciona-algoritmo-wifi/) - lectura adicional
+- [eapol](https://juncotic.com/wpa2-como-funciona-algoritmo-wifi/) - lectura adicional.
 
