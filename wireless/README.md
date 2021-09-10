@@ -51,12 +51,12 @@ phy#0
 	Interface [INTERFACE]
 		ifindex 3
 		wdev 0x1
-		addr [MAC-AP]
+		addr [MAC-IF]
 		type managed
 		txpower 20.00 dBm
 ```
 
-Donde [INTERFACE] es el nombre de nuestra interfaz wireless y [MAC-AP] la dirección MAC del mismo.
+Donde [INTERFACE] es el nombre de nuestra interfaz wireless y [MAC-IF] la dirección MAC del mismo.
 
 En la mayoría de los casos lo encontraremos en modo managed, es normal al ser un cliente de la red (si fuera un AP estaría en modo master).
 
@@ -80,7 +80,7 @@ Siempre podemos comprobar el estado con `iw dev`.
 
 Otra manera de revisar esto es con `iwconfig` o `ifconfig`.
 
-Se puede hacer este mismo proceso con airmon-ng usando el comando `airmon-ng start [MAC-AP]` y `airmon-ng stop [MAC-AP]`.
+Se puede hacer este mismo proceso con airmon-ng usando el comando `airmon-ng start [INTERFACE]` y `airmon-ng stop [INTERFACE]`.
 
 Cuando se revierte de modo monitor podemos iniciar los servicios de networking. Normalmente con este comando `systemctl restart networking.service` y `systemctl restart NetworkManager`.
 
@@ -105,7 +105,7 @@ Capturamos paquetes de la red objetivo con
 
 Mientras corre este proceso, en otra terminal ejecutamos [aireplay-ng](https://www.aircrack-ng.org/doku.php?id=es:aireplay-ng). Puede usarse en varios ataques, en este lab vamos a relizar el ataque deauth. La idea es efectuar el mismo y luego capturar luego los paquetes del handshake.
 
-`aireplay-ng -0 5 -a [MAC-AP] -c [MAC-CLIENT] [MAC-AP]`
+`aireplay-ng -0 5 -a [MAC-AP] -c [MAC-CLIENT] [MINTERFACE]`
 
 con 0 0 indicas que se van a mandar para desautenticar hasta que se cierre el programa
 
@@ -123,7 +123,7 @@ Para finalizar el ataque debemos ver EAPOL en las notas de airodump-ng, cuando a
 
 Si no se obtiene la nota que diga EAPOL, se debe volver a intentar la deautenticación, en todo caso si no se obtuvo un resultado satisfactorio en el primer ataque intentar aumentar el numero de deauth frames a un valor superior o bien indicar el valor 0 para que mande estos frames indefinidamente.
 
-`aireplay-ng -0 0 -a [MAC-AP] -c [MAC-CLIENT] [MAC-AP]`
+`aireplay-ng -0 0 -a [MAC-AP] -c [MAC-CLIENT] [INTERFACE]`
 
 En este caso vigilar la terminal con airodump hasta que se obtenga dicho mensaje.
 
