@@ -175,4 +175,9 @@ Otra cosa que se puede hacer es filtrar dispositivos por dirección MAC, esto pa
 - [fluxion](https://github.com/FluxionNetwork/fluxion) - crear un "evil-twin", ataques WPA MITM.
 - [macchanger](https://www.kali.org/tools/macchanger/) - tool que permite cambiar la dirección MAC a tu adaptador.
 - [eapol](https://juncotic.com/wpa2-como-funciona-algoritmo-wifi/) - lectura adicional.
+- [CWNP](https://www.youtube.com/watch?v=9M8kVYFhMDw) - 4-way-handshake
+- [análisis del ataque](https://www.cyberpunk.rs/capturing-wpa-wpa2-handshake)
+- [descifrar data frames](https://mrncciew.com/2014/08/16/decrypt-wpa2-psk-using-wireshark/)
+- [4-way-handshake](https://www.wifi-professionals.com/2019/01/4-way-handshake)
+- [WiFiSec](https://is.muni.cz/el/1433/jaro2008/PV204/um/5184805/hakin9_wifi_EN.pdf?lang=en) - WEP, WPA, WPA2 security
 
