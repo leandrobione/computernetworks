@@ -105,7 +105,7 @@ Capturamos paquetes de la red objetivo con
 
 Mientras corre este proceso, en otra terminal ejecutamos [aireplay-ng](https://www.aircrack-ng.org/doku.php?id=es:aireplay-ng). Puede usarse en varios ataques, en este lab vamos a relizar el ataque deauth. La idea es efectuar el mismo y luego capturar luego los paquetes del handshake.
 
-`aireplay-ng -0 5 -a [MAC-AP] -c [MAC-CLIENT] [MINTERFACE]`
+`aireplay-ng -0 5 -a [MAC-AP] -c [MAC-CLIENT] [INTERFACE]`
 
 con 0 0 indicas que se van a mandar para desautenticar hasta que se cierre el programa
 
