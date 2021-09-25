@@ -139,7 +139,7 @@ Como dijimos anteriormente, podemos analizar los archivos generados con por las 
 Podremos encontrar tres tipos de trama
 - **Tramas de gestión**: estos paquetes se utilizan para descubrir AP y unirse a una red inalámbrica. Algunos subtipos importantes son Beacon, Probe Request & Response, Authentication & Deauthentication, Association y Disassociation. Podremos verlas en wireshark con el comando `wlan.fc.type == 0`.
 - **Tramas de control**: estos paquetes se utilizan para reconocer la transmisión exitosa y reservar el medio inalámbrico. Los paquetes de control permiten la entrega de paquetes de gestión y de datos. Los subtipos comunes son ACK, request-to-send y clear-to-send. Podremos verlas con `wlan.fc.type == 1`
-- **Tramas de datos**: estos paquetes contienen datos reales y son los únicos paquetes que se reenviarán desde la red inalámbrica a la red cableada. Los tipos de frames de datos incluyen: datos y función null. Se ven con el comando `wlan.fc.type_subtype == 0x20`.
+- **Tramas de datos**: estos paquetes contienen datos reales y son los únicos paquetes que se reenviarán desde la red inalámbrica a la red cableada. Los tipos de frames de datos incluyen: datos y función null. Se ven con el comando `wlan.fc.type == 2`.
 
 ## Brute force
 A continuación basandonos en una wordlist, podremos encontrar la clave, a partir de la captura obtenída.
