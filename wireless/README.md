@@ -6,7 +6,7 @@ En este laboratorio vamos a cubrir un tipo de ataque llamado de deauth, que por 
 ## Metodología del ataque
 
 En un ataque de [deauth](https://www.aircrack-ng.org/doku.php?id=es:deauthentication), básicamente lo que se hace es intervenir en el 4-way-handshake que hace un dispositivo, que ya está autenticado en la red con el wireless access point.
-<p align="center">
+<p align="center" style="background-color:Tomato;">
 	<img width="400px" src="https://github.com/facundoalarcon/computernetworks/blob/main/wireless/pictures/4-way-handshake.png">
 </p>
 
